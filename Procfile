@@ -1,4 +1,6 @@
-web: python backend-proyecto/app.py
+web: gunicorn backend-proyecto.app:app
+
+
 
 
 
