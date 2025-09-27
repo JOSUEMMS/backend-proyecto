@@ -1302,4 +1302,4 @@ if __name__ == '__main__':
     # Crear directorio para facturas si no existe
     if not os.path.exists('facturas'):
         os.makedirs('facturas')
-    app.run(debug=True, host="0.0.0.0", port=5000)  
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))  
